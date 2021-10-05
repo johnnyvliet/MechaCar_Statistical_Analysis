@@ -1,0 +1,7 @@
+library(dplyr)
+install.packages("dplyr")
+library(dplyr)
+readfile <- read.csv(file='C:/Users/jvanv/R_Analysis/MechaCar_mpg.csv',check.names = F, stringsAsFactors = F)
+lm(vehicle_length ~ vehicle_weight+spoiler_angle+ground_clearance+AWD+mpg,readfile)
+?lm()
+summary(lm(vehicle_length ~ vehicle_weight+spoiler_angle+ground_clearance+AWD+mpg,readfile))
